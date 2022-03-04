@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="" />
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="img/top-logo.png">
+
+    <title>Topup | Withdraw</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!--Font Awesome Free-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom styles for this template-->
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
+
+
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" >
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand bg-dark d-flex align-items-center " href="index.html" >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <img src="img/profile.png" alt="user profile" width="50px"/>
+          </div>
+          <span class="sidebar-brand-text">
+            User ID:26000023 <br>
+            Last Login: 10 Oct 2021
+          </span>
+          
+        </a>
+
+        
+        <div class="inner-sidebar overflow-auto">
+          <!-- Nav Item - Transaction -->
+          <li class="nav-item active">
+          <div class="nav-link" href="index.html">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span>Transaction</span></div>
+          </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="index.html">
+            <span>Sales</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="topup-with-tran.html">
+            <span>Top up/Withdraw/Transfer</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        
+        
+        
+
+        <li class="nav-item active">
+          <div class="nav-link" href="index.html">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span>Query</span></div >
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="draw_result.html">
+            <span>Draw Result</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="bonus_report.html">
+            <span>Bonus Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="real-time-report.html">
+            <span>Real-Time-Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="capital.html">
+            <span>Capital</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="settlement.html">
+            <span>Settlement</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="transaction_record.html">
+            <span>Transaction Record</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        
+        <!-- Nav Item - Setting -->
+        <li class="nav-item active">
+          <div class="nav-link" href="">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Setting</span></div>
+        </li>
+        
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_login.html">
+            <span>Modify Login Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_pass.html">
+            <span>Modify Tran Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="">
+            <span>Printer Test</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+
+      </div><!--End inner sidebar-->
+
+
+        
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow " >
+            <div class="topbar-divider d-none d-sm-block"></div>    
+            <div class="header-title">
+              Record
+            </div>
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3" >
+              <i class="fa fa-bars"></i>
+            </button>
+            <hr class="sidebar-divider my-0" />
+            <!-- Topbar Navbar -->
+            <hr>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - User Information -->
+            <div class="issue">
+              <div class="issue-date">
+                <p>05/October 11:08:00</p>
+                <p>Issue W01210825003</p>
+              </div>
+                <a class="" href="login.html">
+                    Logout&nbsp;
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+          
+          </nav>
+          <!-- End of Topbar -->
+
+          
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            
+            <div class="row">
+              <div class="col-6">
+                <div class="main-content">
+                  <a href="topup-with-tran.html">
+                    <button type="button" class="btn btn-top-up btn-md btn-block d-flex justify-content-start ">
+                      <div class="icon">
+                        <img src="img/icon/topup.png" alt="" class="ml-5" width="45px">
+                      </div>
+                      <p class="t-title pt-2">Top up</p> 
+                    </button>
+                  </a>
+
+                  <a href="withdraw.html">
+                    <button type="button" class="btn btn-top-up btn-md btn-block d-flex justify-content-start">
+                      <div class="icon">
+                        <img src="img/icon/withdraw.png" alt="" class="ml-5" width="40px">
+                      </div>
+                      <p class="t-title pt-2">Withdraw</p> 
+                    </button>
+                  </a>
+
+                  <a href="transfer.html">
+                    <button type="button" class="btn btn-top-up btn-md btn-block d-flex justify-content-start">
+                        
+                      <div class="icon">
+                        <img src="img/icon/transfer.png" alt="" class="ml-5" width="45px">
+                      </div>
+                      <p class="t-title pt-2">Transfer</p> 
+                    </button>
+                  </a>
+
+                  <a href="record.html">
+                    <button type="button" class="btn btn-top-up btn-md btn-block d-flex justify-content-start">
+                        <span class="active-menu"></span> 
+                      <div class="icon">
+                        <img src="img/icon/record.png" alt="" class="ml-5" width="45px">
+                      </div>
+                      <p class="t-title pt-2">Record</p> 
+                    </button>
+                  </a>
+                
+                </div><!--End main-Content-->
+              </div><!--End-col-9-->
+
+              <div class="col-6">
+                <div class="top-up-content">
+                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="topup-tab" data-toggle="tab" href="#topup" role="tab" aria-controls="topup" aria-selected="false">Top Up</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="withdraw-tab" data-toggle="tab" href="#withdraw" role="tab" aria-controls="withdraw" aria-selected="false">Withdraw</a>
+                        </li>
+                      </ul>
+                      <div class="tab-content overflow-auto" id="myTabContent">
+                        <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                            <ul class="list-group list-group-flush ">
+                                <div class="inner-cart  overflow-auto">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Sale Comm<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            320R
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Sale Comm<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            320R
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Sale Comm<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            320R
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Sale Comm<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            320R
+                                        </div>
+                                    </li>
+
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    
+                                </div>
+                              </ul>
+                        </div>
+                        <div class="tab-pane fade" id="topup" role="tabpanel" aria-labelledby="topup-tab">
+                            <ul class="list-group list-group-flush ">
+                                <div class="inner-cart  overflow-auto">
+                                    
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Top up<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="withdraw" role="tabpanel" aria-labelledby="withdraw-tab">
+                            <ul class="list-group list-group-flush ">
+                                <div class="inner-cart  overflow-auto">
+                                    
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <div class="left d-inline">
+                                            Withdraw<br>
+                                            <small>2021-09-9 14:00.24</small>
+                                        </div>
+                                        <div class="right">
+                                            1,000,000R
+                                            <small>User:12345678</small>
+                                        </div>
+                                    </li>
+                                    
+                                </div>
+                            </ul>
+                        </div>
+                      </div>
+
+                      <div class="t-total">
+                        <div class="row">
+                          <div class="col">
+                            <p>Total Amount:</p>
+                          </div>
+                          <div class="col">
+                            <p><span style="font-weight: 700;">0R</span></p>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col">
+                            <p>Sales Today:</p>
+                          </div>
+                          <div class="col">
+                            <p><span style="font-weight: 700;">0R</span></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col">
+                            <p>Bonus:</p>
+                          </div>
+                          <div class="col">
+                            <p><span style="font-weight: 700;">0R</span></p>
+                          </div>
+                        </div>
+                        
+                          <div class="row">
+                            <div class="col">
+                              <p>Balance:</p>
+                            </div>
+                            <div class="col">
+                              <p><span style="font-weight: 700;">40,000,00R</span></p>
+                            </div>
+                          </div>
+                        
+                      </div><!--End total-->
+                </div>
+                
+              </div><!--End col-4-->
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class="footer"></footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sidebar.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+  
+  </body>
+</html>

@@ -1,0 +1,7 @@
+// Custom tab nav
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: $black;
+  background-color: $red;
+  border-color: $nav-tabs-link-active-border-color;
+}

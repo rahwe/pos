@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="" />
+    <meta name="author" content=""/>
+    <link rel="shortcut icon" href="img/top-logo.png">
+
+    <title>Wingo | POS</title>
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/f25-bank-printer" rel="stylesheet">
+
+    <!--Font Awesome Free-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Custom styles for this template-->
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet">
+
+
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar" >
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand bg-dark d-flex align-items-center " href="index.html" >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <img src="img/profile.png" alt="user profile" width="50px"/>
+          </div>
+          <span class="sidebar-brand-text">
+            User ID:26000023 <br>
+            Last Login: 10 Oct 2021
+          </span>
+          
+        </a>
+
+        <div class="inner-sidebar overflow-auto">
+          <!-- Nav Item - Transaction -->
+          <li class="nav-item active">
+          <div class="nav-link" href="index.html">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span>Transaction</span></div>
+          </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="index.html">
+            <span>Sales</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="topup-with-tran.html">
+            <span>Top up/Withdraw/Transfer</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        
+        
+        
+        <li class="nav-item active">
+          <div class="nav-link" href="index.html">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span>Query</span></div >
+        </li>
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="draw_result.html">
+            <span>Draw Result</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="bonus_report.html">
+            <span>Bonus Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="real-time-report.html">
+            <span>Real-Time-Report</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="capital.html">
+            <span>Capital</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="settlement.html">
+            <span>Settlement</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="transaction_record.html">
+            <span>Transaction Record</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        
+        <!-- Nav Item - Setting -->
+        <li class="nav-item active">
+          <div class="nav-link" href="">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Setting</span></div>
+        </li>
+        
+        <!-- Divider -->
+        <hr class="sidebar-divider" />
+
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_login.html">
+            <span>Modify Login Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="modify_pass.html">
+            <span>Modify Tran Password</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link d-flex justify-content-between" href="">
+            <span>Printer Test</span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+          </a>
+        </li>
+
+
+      </div><!--End inner sidebar-->
+
+
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block" />
+
+      </ul>
+      <!-- End of Sidebar -->
+
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow " >
+            <div class="topbar-divider d-none d-sm-block"></div>    
+            <div class="header-title">
+              5/35
+            </div>
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3" >
+              <i class="fa fa-bars"></i>
+            </button>
+            <hr class="sidebar-divider my-0" />
+            <!-- Topbar Navbar -->
+            <hr>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - User Information -->
+            <div class="issue">
+              <div class="issue-date">
+                <p>05/October 11:08:00</p>
+                <p>Issue W01210825003</p>
+              </div>
+                <a class="" href="#">
+                    Logout&nbsp;
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            </div>
+          
+          </nav>
+          <!-- End of Topbar -->
+
+          
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            
+            <div class="row">
+              <div class="col-8">
+                <div class="main-content">
+
+                  <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="normalN-tab" data-toggle="tab" href="#normalN" role="tab" aria-controls="normalN" aria-selected="true">Normal(N)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="singleSp-tab" data-toggle="tab" href="#singleSp" role="tab" aria-controls="singleSp" aria-selected="true">Single(SP)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="bigAndSmall-tab" data-toggle="tab" href="#bigAndSmall" role="tab" aria-controls="single" aria-selected="false">Big And Small(P)</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="normalN" role="tabpanel" aria-labelledby="normalN-tab">
+                      <div class="content-top-five">
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-five">01</div>
+                              <div class="ball-five">02</div>
+                              <div class="ball-five">03</div>
+                              <div class="ball-five">04</div>
+                              <div class="ball-five">05</div>
+                              <div class="ball-five">06</div>
+                              <div class="ball-five">07</div>
+                              <div class="ball-five">08</div>
+                              <div class="ball-five">09</div>   
+                              <div class="ball-five">10</div>       
+                            </div>
+                          </div>
+                     
+
+                    
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-five">11</div>
+                              <div class="ball-five">12</div>
+                              <div class="ball-five">13</div>
+                              <div class="ball-five">14</div>
+                              <div class="ball-five">15</div>
+                              <div class="ball-five">16</div>
+                              <div class="ball-five">17</div>
+                              <div class="ball-five">18</div>
+                              <div class="ball-five">19</div>       
+                              <div class="ball-five">20</div>   
+                            </div>
+                          </div>
+                     
+                      
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-five">21</div>
+                              <div class="ball-five">22</div>
+                              <div class="ball-five">23</div>
+                              <div class="ball-five">24</div>
+                              <div class="ball-five">25</div>
+                              <div class="ball-five">26</div>
+                              <div class="ball-five">27</div>
+                              <div class="ball-five">28</div>
+                              <div class="ball-five">29</div>     
+                              <div class="ball-five">30</div>     
+                            </div>
+                          </div>
+                    
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-five">31</div>
+                              <div class="ball-five">32</div>
+                              <div class="ball-five">33</div>
+                              <div class="ball-five">34</div>
+                              <div class="ball-five">35</div> 
+                              <div class="ball-five ball-ma"></div>
+                              <div class="ball-five ball-ma"></div>
+                              <div class="ball-five ball-ma"></div>
+                              <div class="ball-five ball-ma"></div>
+                              <div class="ball-five ball-ma"></div>                   
+                            </div>
+                          </div>
+                      
+
+                        <div class="row mt-3">
+                            <div class="col d-flex justify-content-center">
+                              <button type="button" class="btn btn-random-sp text-uppercase mx-5" id="nrandOne">+ Random 1</button>
+                              <button type="button" class="btn btn-random-sp text-uppercase mx-5" id="nrandFive">+ Random 5</button>
+                            </div>
+                        </div>
+                        
+                      </div>
+                      <div class="content-config">
+                        <div class="row">
+                          <div class="col">
+                            <form>
+                              <div class="form-row">
+                                <div class="col-2">
+                                  <input type="text" class="form-control" placeholder="1">
+                                </div>
+                                <div class="col-3">
+                                  <input type="text" class="form-control" placeholder="1,000R">
+                                </div>
+                                <div class="col-3">
+                                  <select class="form-control">
+                                    <option name="" id="">09:00 am</option>
+                                    <option name="" id="">10:30 am</option>
+                                    <option name="" id="">12:00 am</option>
+                                    <option name="" id="">02:00 pm</option>
+                                    <option name="" id="">04:00 pm</option>
+                                    <option name="" id="">06:00 pm</option>
+                                  </select>
+                                </div>
+                                <div class="col-4">
+                                  <div class="qty">QTY: <span>0</span></div>
+                                  <div class="amt">AMT: <span>0</span> R</div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-key-board">
+                        <div class="row">
+                          <div class="col">
+                            <div class="card">
+                              <div class="row keyboad-wrap" id="normalKey">
+
+                                <div class="col-3 pr-0 text-right">
+                                    <button class="btn btn-text-primary shadowed buy-key" type="button" id="buyFive">
+                                      <i class="fa fa-cart-plus" aria-hidden="true" style="color: #FF0000;"></i>
+                                    </button>
+                                    <button class="btn btn-text-primary shadowed print-key" type="button" data-toggle="modal" data-target="#staticBackdrop">
+                                      <i class="fa fa-print" aria-hidden="true"></i>
+                                    </button>
+                                    
+                                </div>
+                                <div class="col-2 text-center">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="1">1</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="4">4</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="7">7</button>
+                                    
+                                </div>
+                                <div class="col-2 text-center">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="2">2</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="5">5</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="8">8</button>
+                                   
+                                </div>
+                                <div class="col-2 text-center">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="3">3</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="6">6</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="9">9</button>
+                                   
+                                </div>
+                                
+                                <div class="col-3 text-left">
+                                    <button class="btn btn-text-primary shadowed delete" type="button">
+                                      <i class="fa fa-window-close" aria-hidden="true" style="color: #FF0000;"></i>
+                                    </button>
+                                    <button class="btn btn-text-primary shadowed zero-key" type="button" value="0">0</button>
+                                    
+                                </div> 
+                                <div class="col-3 pr-0 text-right"><a href="index.html"><button class="btn btn-text-primary shadowed twod-key" type="button">2D</button></a></div> 
+                                <div class="col-2"><a href="3-d.html"><button class="btn btn-text-primary shadowed threed-key" type="button">3D</button></a></div>
+                                <div class="col-4"><a href="bingo.html"><button class="btn btn-text-primary shadowed winsix-key" type="button">BINGO</button></a></div>
+                                <div class="col-3"><a href="5-35.html"><button class="btn btn-text-primary shadowed extrawin-key  btn-active" type="button">5/35</button></a></div>  
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--End Single Sp tab-->
+                    <div class="tab-pane fade show" id="singleSp" role="tabpanel" aria-labelledby="singleSp-tab">
+                      <div class="content-top-bingo">
+                        
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <button class="ball-bingo">01</button>
+                              <div class="ball-bingo">02</div>
+                              <div class="ball-bingo">03</div>
+                              <div class="ball-bingo">04</div>
+                              <div class="ball-bingo">05</div>
+                              <div class="ball-bingo">06</div>
+                              <div class="ball-bingo">07</div>
+                              <div class="ball-bingo">08</div>
+                              <div class="ball-bingo">09</div>   
+                              <div class="ball-bingo">10</div>       
+                            </div>
+                          </div>
+                     
+
+                    
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-bingo">11</div>
+                              <div class="ball-bingo">12</div>
+                              <div class="ball-bingo">13</div>
+                              <div class="ball-bingo">14</div>
+                              <div class="ball-bingo">15</div>
+                              <div class="ball-bingo">16</div>
+                              <div class="ball-bingo">17</div>
+                              <div class="ball-bingo">18</div>
+                              <div class="ball-bingo">19</div>       
+                              <div class="ball-bingo">20</div>   
+                            </div>
+                          </div>
+                     
+                      
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-bingo">21</div>
+                              <div class="ball-bingo">22</div>
+                              <div class="ball-bingo">23</div>
+                              <div class="ball-bingo">24</div>
+                              <div class="ball-bingo">25</div>
+                              <div class="ball-bingo">26</div>
+                              <div class="ball-bingo">27</div>
+                              <div class="ball-bingo">28</div>
+                              <div class="ball-bingo">29</div>     
+                              <div class="ball-bingo">30</div>     
+                            </div>
+                          </div>
+                    
+                          <div class="row">
+                            <div class="col d-flex justify-content-between">
+                              <div class="ball-bingo">31</div>
+                              <div class="ball-bingo">32</div>
+                              <div class="ball-bingo">33</div>
+                              <div class="ball-bingo">34</div>
+                              <div class="ball-bingo">35</div>  
+                              <div class="ball-bingo ball-ma"></div>
+                              <div class="ball-bingo ball-ma"></div>
+                              <div class="ball-bingo ball-ma"></div>
+                              <div class="ball-bingo ball-ma"></div>
+                              <div class="ball-bingo ball-ma"></div>                   
+                            </div>
+                          </div>
+                        <div class="row mt-3">
+                            <div class="col d-flex justify-content-center">
+                              <button type="button" class="btn btn-random-sp text-uppercase mx-5" id="randOne">+ Random 1</button>
+                              <button type="button" class="btn btn-random-sp text-uppercase mx-5" id="randFive">+ Random 5</button>
+                            </div>
+                        </div>
+                        
+                      </div>
+                      <div class="content-config">
+                        <div class="row">
+                          <div class="col">
+                            <form>
+                              <div class="form-row">
+                                <div class="col-2">
+                                  <input type="text" class="form-control" placeholder="1">
+                                </div>
+                                <div class="col-3">
+                                  <input type="text" class="form-control" placeholder="1,000R">
+                                </div>
+                                <div class="col-3">
+                                  <select class="form-control">
+                                    <option name="" id="">09:00 am</option>
+                                    <option name="" id="">10:30 am</option>
+                                    <option name="" id="">12:00 am</option>
+                                    <option name="" id="">02:00 pm</option>
+                                    <option name="" id="">04:00 pm</option>
+                                    <option name="" id="">06:00 pm</option>
+                                  </select>
+                                </div>
+                                <div class="col-4">
+                                  <div class="qty">QTY: <span>0</span></div>
+                                  <div class="amt">AMT: <span>0 </span>R</div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-key-board">
+                        <div class="row">
+                          <div class="col">
+                            <div class="card">
+                              <div class="row keyboad-wrap" id="normalKey">
+
+                                <div class="col-3 pr-0 text-right">
+                                    <button class="btn btn-text-primary shadowed buy-key" type="button" id="buySp">
+                                      <i class="fa fa-cart-plus" aria-hidden="true" style="color: #FF0000;"></i>
+                                    </button>
+                                    <button class="btn btn-text-primary shadowed print-key" type="button" data-toggle="modal" data-target="#staticBackdrop">
+                                      <i class="fa fa-print" aria-hidden="true"></i>
+                                    </button>
+                                    
+                                </div>
+                                <div class="col-2 text-center">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="1">1</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="4">4</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="7">7</button>
+                                    
+                                </div>
+                                <div class="col-2 text-center">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="2">2</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="5">5</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="8">8</button>
+                                   
+                                </div>
+                                <div class="col-2 text-center">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="3">3</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="6">6</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="9">9</button>
+                                   
+                                </div>
+                                
+                                <div class="col-3 text-left">
+                                    <button class="btn btn-text-primary shadowed delete" type="button">
+                                      <i class="fa fa-window-close" aria-hidden="true" style="color: #FF0000;"></i>
+                                    </button>
+                                    <button class="btn btn-text-primary shadowed zero-key" type="button" value="0">0</button>
+                                   
+                                </div> 
+
+                                <div class="col-3 pr-0 text-right"><a href="index.html"><button class="btn btn-text-primary shadowed twod-key" type="button">2D</button></a></div> 
+                                <div class="col-2"><a href="3-d.html"><button class="btn btn-text-primary shadowed threed-key" type="button">3D</button></a></div>
+                                <div class="col-4"><a href="bingo.html"><button class="btn btn-text-primary shadowed winsix-key" type="button">BINGO</button></a></div>
+                                <div class="col-3"><a href="5-35.html"><button class="btn btn-text-primary shadowed extrawin-key  btn-active" type="button">5/35</button></a></div> 
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--End Single Sp tab-->
+                    <div class="tab-pane fade" id="bigAndSmall" role="tabpanel" aria-labelledby="bigAndSmall-tab">
+                      <div class="content-top-bingo">
+                     
+                        <div class="row">
+                            <div class="col-4 text-center">
+                              <h1><</h1>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h1>=</h1>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h1>></h1>
+                            </div>
+                          </div>
+                        
+                        <div class="row">
+                          <div class="col-4 d-flex justify-content-center">
+                            <button class="big-small text-center"  value="1">
+                                1.Small<br>
+                                [01-17]
+                            </button>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                            <button class="big-small text-center"  value="2">
+                              3.Middle<br>
+                              [18]
+                          </button>
+                          </div>
+                          <div class="col-4 d-flex justify-content-center">
+                            <button class="big-small text-center" value="3">
+                              2.Big<br>
+                              [19-35]
+                          </button>
+                          </div>
+                        </div>
+                        
+                        
+                      </div><!--End content-top-->
+                      <div class="content-config">
+                        <div class="row">
+                          <div class="col">
+                            <form>
+                              <div class="form-row">
+                                <div class="col-2">
+                                  <input type="text" class="form-control" placeholder="1">
+                                </div>
+                                <div class="col-3">
+                                  <input type="text" class="form-control" placeholder="1,000R">
+                                </div>
+                                <div class="col-3">
+                                  <select class="form-control">
+                                    <option name="" id="">09:00 am</option>
+                                    <option name="" id="">10:30 am</option>
+                                    <option name="" id="">12:00 am</option>
+                                    <option name="" id="">02:00 pm</option>
+                                    <option name="" id="">04:00 pm</option>
+                                    <option name="" id="">06:00 pm</option>
+                                  </select>
+                                </div>
+                                <div class="col-4">
+                                  <div class="qty">QTY: <span>0</span></div>
+                                  <div class="amt">AMT: <span>0</span>R</div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="content-key-board">
+                        <div class="row">
+                          <div class="col">
+                            <div class="card">
+                              <div class="row keyboad-wrap" id="normalKey">
+                                <div class="col-3 pr-0 text-right">
+                                    <button class="btn btn-text-primary shadowed buy-key" type="button" id="buyBig">
+                                      <i class="fa fa-cart-plus" aria-hidden="true" style="color: #FF0000;"></i>
+                                    </button>
+                                    <button class="btn btn-text-primary shadowed print-key" type="button"data-toggle="modal" data-target="#staticBackdrop">
+                                      <i class="fa fa-print" aria-hidden="true"></i>
+                                    </button>
+                                   
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="1" onclick="easynum()">1</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="4" onclick="easynum()">4</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="7" onclick="easynum()">7</button>
+                                    
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="2" onclick="easynum()">2</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="5" onclick="easynum()">5</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="8" onclick="easynum()">8</button>
+                                   
+                                </div>
+                                <div class="col-2">
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="3" onclick="easynum()">3</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="6" onclick="easynum()">6</button>
+                                    <button type="button" class="btn btn-text-primary shadowed key" value="9" onclick="easynum()">9</button>
+                                    
+                                </div>
+                                
+                                <div class="col-3 text-left">
+                                    <button class="btn btn-text-primary shadowed delete" type="button" onclick="easy_numpad_del()">
+                                      <i class="fa fa-window-close" aria-hidden="true" style="color: #FF0000;"></i>
+                                    </button>
+                                    <button class="btn btn-text-primary shadowed zero-key" type="button" value="0" onclick="easynum()">0</button>
+                                    
+                                </div>  
+                                <div class="col-3 pr-0 text-right"><a href="index.html"><button class="btn btn-text-primary shadowed twod-key" type="button">2D</button></a></div> 
+                                <div class="col-2"><a href="3-d.html"><button class="btn btn-text-primary shadowed threed-key" type="button">3D</button></a></div>
+                                <div class="col-4"><a href="bingo.html"><button class="btn btn-text-primary shadowed winsix-key" type="button">BINGO</button></a></div>
+                                <div class="col-3"><a href="5-35.html"><button class="btn btn-text-primary shadowed extrawin-key  btn-active" type="button">5/35</button></a></div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!--End Big and small tab-->
+                  </div><!--End table content-->
+
+
+                </div><!--End main-Content-->
+              </div><!--End-col-9-->
+
+              <div class="col-4">
+                <div class="cart">
+                    <div class="card-header">
+                      Your Cart
+                    </div>
+                    <ul class="list-group list-group-flush" >
+                        <div class="inner-cart  overflow-auto">
+                            <!--Result Display here-->
+                        </div>
+                    </ul>
+                    <div class="total">
+                      <div class="row">
+                        <div class="col">
+                          <p>Total Amount:</p>
+                        </div>
+                        <div class="col">
+                          <p><span style="font-weight: 700;">0R</span></p>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col">
+                          <p>Sales Today:</p>
+                        </div>
+                        <div class="col">
+                          <p><span style="font-weight: 700;">0R</span></p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <p>Bonus:</p>
+                        </div>
+                        <div class="col">
+                          <p><span style="font-weight: 700;">0R</span></p>
+                        </div>
+                      </div>
+                      
+                        <div class="row">
+                          <div class="col">
+                            <p>Balance:</p>
+                          </div>
+                          <div class="col">
+                            <p><span style="font-weight: 700;">40,000,00R</span></p>
+                          </div>
+                        </div>
+                      
+                    </div><!--End total-->
+                </div><!--End cart-->
+                
+              </div><!--End col-4-->
+            </div>
+          </div>
+          <!-- /.container-fluid -->
+        </div>
+        <!-- End of Main Content -->
+
+        <!-- Footer -->
+        <footer class=" bg-white"></footer>
+        <!-- End of Footer -->
+      </div>
+      <!-- End of Content Wrapper -->
+       <!-- Modal -->
+       <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-body">
+              
+              <div class="ticket text-center">
+                <img src="img/receipt-logo.bmp" alt="logo">
+                <div class="head-note">
+                    <div class="receipt-number text-left">765-657-332-675-098-980-0</div>
+                    <div class="receipt-id">
+                        <p>ID: wingo08</p>
+                        <p>W01220128001</p>
+                    </div>
+                    <div class="receipt-date text-left">2022-01-28 08:45:56</div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="post">2D(A)</th>
+                            <th class="description">N100R*100*1M</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="quantity">(0+1+2+3+4+5+6+7+8+9)</td>
+                            <td class="price">1,000R</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">(0+1+2+3+4+5+6+7+8+9)</td>
+                            <td class="price">1,000R</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">(0+1+2+3+4+5+6+7+8+9)</td>
+                            <td class="price">1,000R</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">(0+1+2+3+4+5+6+7+8+9)</td>
+                            <td class="price">1,000R</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">(0+1+2+3+4+5+6+7+8+9)</td>
+                            <td class="price">1,000R</td>
+                        </tr>
+                        <tr>
+                            <td class="quantity">(0+1+2+3+4+5+6+7+8+9)</td>
+                            <td class="price">1,000R</td>
+                        </tr>
+                       
+                    
+                    </tbody>
+                </table>
+                <p class="centered">TOTAL AMT 1,000R</p>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary hidden-print" data-dismiss="modal" >Cancel</button>
+                  <button type="button"id="btnPrint" class="btn btn-primary hidden-print">Print</button>
+                </div>
+              </div>
+    
+            </div>
+
+
+            </div>
+            
+          </div>
+      </div>
+    </div>
+    <!-- End of Page Wrapper -->
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sidebar.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+    <script>
+      const $btnPrint = document.querySelector("#btnPrint");
+          $btnPrint.addEventListener("click", () => {
+              window.print();
+      });
+    </script>
+
+  </body>
+</html>
